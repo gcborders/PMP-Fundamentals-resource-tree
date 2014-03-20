@@ -11,7 +11,7 @@
 	var tabGroup = Titanium.UI.createTabGroup();
 
 	var mainWindow = Titanium.UI.createWindow({
-		title: "Explore California",
+		title: "PMP Prep",
 		backgroundColor: "#FFF",
 		fullscreen: false,	//[Android: makes the window a "heavyweight" window (thereby allowing the back button to work with it)]
 		exitOnClose: true, //[Android: make the application exit if the back button is pressed from the main window]
