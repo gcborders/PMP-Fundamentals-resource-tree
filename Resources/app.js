@@ -1,11 +1,32 @@
-//We'll enclose our code in a self-invoking function to avoid
-//inadvertent pollution of the global namespace
-
+/*
+ * PMP Prep App for CS 633 - Distributed Software Development
+ * 
+ * The purpose of this application is to provide a resource for those interested in project management.
+ * 
+ * Development Team: Gregg Borders, Jim Geraci, Crystal Weaver, Sama Al-Obaidy
+ ************************************************************************
+ * Change Log:
+ ****************************************************************************************
+ * Change Description									* Developer		* Date			*
+ ****************************************************************************************
+ * Initial Code brought from Explore California App		* Jim Geraci	* 20-MAR-2014	*
+ ****************************************************************************************
+ ****************************************************************************************
+ * 														* 				* 				*
+ ****************************************************************************************
+ ****************************************************************************************
+ * 														* 				* 				*
+ ****************************************************************************************
+ ****************************************************************************************
+ * 														* 				* 				*
+ **************************************************************************************** 
+ * 
+ */
 (function(){
 	// this sets the background color of the master UIView (when there are no windows/tab groups on it)
-	Titanium.UI.setBackgroundColor('#000');
+	Titanium.UI.setBackgroundColor('#FFF');
 
-	var TourView = require("/views/TourView");
+	var ProcessView = require("/views/ProcessView");
 	var DetailView = require("/views/DetailView"); //Remember: this is a function
 
 	var tabGroup = Titanium.UI.createTabGroup();
@@ -24,11 +45,11 @@
 		window:mainWindow
 	});
 
-	var tourView = new TourView();
+	var ProcessView = new ProcessView();
 	
-	mainWindow.add(tourView);
+	mainWindow.add(ProcessView);
 
-	tourView.addEventListener("click", function(e){
+	ProcessView.addEventListener("click", function(e){
 		var detailView = new DetailView({
 			detailTitle: e.rowData.detailTitle,
 			mainImage: e.rowData.mainImage,
