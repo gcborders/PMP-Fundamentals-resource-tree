@@ -49,8 +49,8 @@ function createRow(params){
 
 var Processes = [
 	createRow({
-		title: "Backpack Cal",
-		shortDescription: "Explore California our favorite way...by foot! Get outdoors and into the millions of acres of forests, desert, and spectacular scenery that California is famous for.",
+		title: "Initiating Processes",
+		shortDescription: "The Knowlege Areas in the Initiating Processes contain the Project Charter and identifies the Stakeholders ",
 		color: "#000",
 		leftImage: "/images/backpackCalThumb.png",
 		mainImage: "/images/backpackCalImage.png",
