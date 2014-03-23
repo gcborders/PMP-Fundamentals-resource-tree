@@ -6,7 +6,7 @@ function DetailView(params){
 	
 	var img = Ti.UI.createImageView({
 		image: params.mainImage,
-		width: "320dp",
+		width: "100%",
 		height: "180dp",
 		top: "0dp"
 	});
