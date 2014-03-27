@@ -49,8 +49,18 @@ function createRow(params){
 
 var Processes = [
 	createRow({
-		title: "Initiating Processes",
-		shortDescription: "The Knowlege Areas in the Initiating Processes contain the Project Charter and identifies the Stakeholders ",
+		title: "WBS",
+		shortDescription: "This is the section where we got the WBS.",
+		color: "#000",
+		leftImage: "/images/backpackCalThumb.png",
+		mainImage: "/images/backpackCalImage.png",
+		detail: "/detail/WBS.html",
+		hasChild: true,
+		className: "tableRow"
+	}),
+	createRow({
+		title: "Backpack Cal",
+		shortDescription: "Explore California our favorite way...by foot! Get outdoors and into the millions of acres of forests, desert, and spectacular scenery that California is famous for.",
 		color: "#000",
 		leftImage: "/images/backpackCalThumb.png",
 		mainImage: "/images/backpackCalImage.png",

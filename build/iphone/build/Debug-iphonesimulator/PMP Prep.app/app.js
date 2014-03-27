@@ -23,44 +23,39 @@
  * 
  */
 (function(){
-	// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+	//Set the background color of the main Window
 	Titanium.UI.setBackgroundColor('#FFF');
 
-	var ProcessView = require("/views/ProcessView");
+	//Get Required Modules
 	var DetailView = require("/views/DetailView"); //Remember: this is a function
-
-	var tabGroup = Titanium.UI.createTabGroup();
-
-	var mainWindow = Titanium.UI.createWindow({
-		title: "PMP Prep",
-		backgroundColor: "#FFF",
-		fullscreen: false,	//[Android: makes the window a "heavyweight" window (thereby allowing the back button to work with it)]
-		exitOnClose: true, //[Android: make the application exit if the back button is pressed from the main window]
-		navBarHidden: false,
-		tabBarHidden: true
-	});
-	var tab = Titanium.UI.createTab({
-		icon:'KS_nav_views.png', //Irrelevant; we are hiding the tab bar
-		title:'Tab 1', //Irrelevant; we are hiding the tab bar
-		window:mainWindow
-	});
-
-	var ProcessView = new ProcessView();
+	var MainWindowView = require("/views/MainWindowView");
+	var ProcessViewWindow = require("/views/ProcessViewWindow");
 	
-	mainWindow.add(ProcessView);
-
-	ProcessView.addEventListener("click", function(e){
-		var detailView = new DetailView({
-			detailTitle: e.rowData.detailTitle,
-			mainImage: e.rowData.mainImage,
-			detail: e.rowData.detail
-		});
-		tab.open(detailView, {animated: true});
+	//Load First Two Windows
+	var mainWindow= MainWindowView();
+	var processWindow = ProcessViewWindow();
+	
+	//Open Main Window
+	mainWindow.open();
+	
+	//Listen for Swipe
+	mainWindow.addEventListener('swipe', function(e) {
+   		if (e.direction == 'left') {
+   			//Open List of Processes
+      		processWindow.open();
+      		
+      		//Listen for Click Event
+      		processWindow.addEventListener("click", function(e){
+				var detailView = new DetailView({
+					detailTitle: e.rowData.detailTitle,
+					mainImage: e.rowData.mainImage,
+					detail: e.rowData.detail
+				});
+			//Open the Window	
+			detailView.open();
+	
+			});
+   		}	
 	});
-
-	tabGroup.addTab(tab);
-
-	// open tab group
-	tabGroup.open();
 
 })();

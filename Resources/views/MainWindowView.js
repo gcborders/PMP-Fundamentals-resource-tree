@@ -16,7 +16,7 @@ function MainWindowView() {
 			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
 			fontWeight: "bold" //Android will ignore this
 		},
-		top: "3dp",
+		top: "5dp",
 		//left: "54dp",
 		height: Ti.UI.SIZE,
 		color: "#000"
@@ -32,7 +32,7 @@ function MainWindowView() {
 		//left: "54dp",
 		height: Ti.UI.SIZE,
 		color: "#000"
-	});
+	});	
 	mainWindow.add(mainLabel);
 	mainWindow.add(mainText);
 

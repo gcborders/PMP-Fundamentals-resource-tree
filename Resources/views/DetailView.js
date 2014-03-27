@@ -5,16 +5,8 @@ function DetailView(params){
 		fullscreen: false,	//[Android: makes the window a "heavyweight" window (thereby allowing the back button to work with it)]
 		exitOnClose: true, //[Android: make the application exit if the back button is pressed from the main window]
 		navBarHidden: false,
-		tabBarHidden: true
+		tabBarHidden: false
 	});
-	
-	var img = Ti.UI.createImageView({
-		image: params.mainImage,
-		width: "100%",
-		height: "180dp",
-		top: "0dp"
-	});
-	
 	var headerLabel = Ti.UI.createLabel({
 		text: params.detailTitle,
 		font: {
@@ -36,11 +28,10 @@ function DetailView(params){
 		top: "180dp",
 		height: Ti.UI.FILL,
 		enableZoomControls: false //Android only
-	});
-
-	win.add(img);
+	});	
+ 
 	win.add(detail);
-	win.add(headerLabel);
+	win.add(headerLabel);	
 
 	return win;
 }
