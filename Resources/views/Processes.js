@@ -52,8 +52,8 @@ var Processes = [
 		title: "Plan Scope Management",
 		shortDescription: "This is the section where we got Plan Scope Management.",
 		color: "#000",
-		leftImage: "/images/backpackCalThumb.png",
-		mainImage: "/images/backpackCalImage.png",
+		leftImage: "/images/definescopethumb.png",
+		mainImage: "/images/planscopemanagement.png",
 		detail: "/detail/PlanScopeManagement.html",
 		hasChild: true,
 		className: "tableRow"
@@ -63,8 +63,8 @@ var Processes = [
 		title: "Collect Requirements",
 		shortDescription: "This is the section where we got the Requirements.",
 		color: "#000",
-		leftImage: "/images/backpackCalThumb.png",
-		mainImage: "/images/backpackCalImage.png",
+		leftImage: "/images/definescopethumb.png",
+		mainImage: "/images/definescope.png",
 		detail: "/detail/CollectRequirements.html",
 		hasChild: true,
 		className: "tableRow"
@@ -74,8 +74,8 @@ var Processes = [
 		title: "Define Scope",
 		shortDescription: "This is the section where we got the Scope.",
 		color: "#000",
-		leftImage: "/images/backpackCalThumb.png",
-		mainImage: "/images/backpackCalImage.png",
+		leftImage: "/images/definescopethumb.png",
+		mainImage: "/images/definescope.png",
 		detail: "/detail/DefineScope.html",
 		hasChild: true,
 		className: "tableRow"
@@ -85,8 +85,8 @@ var Processes = [
 		title: "WBS",
 		shortDescription: "This is the section where we got the WBS.",
 		color: "#000",
-		leftImage: "/images/backpackCalThumb.png",
-		mainImage: "/images/backpackCalImage.png",
+		leftImage: "/images/definescopethumb.png",
+		mainImage: "/images/definescope.png",
 		detail: "/detail/WBS.html",
 		hasChild: true,
 		className: "tableRow"
