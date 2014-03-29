@@ -35,6 +35,7 @@
 	var mainWindow= MainWindowView();
 	var processWindow = ProcessViewWindow();
 	
+
 	//Open Main Window
 	mainWindow.open();
 	
