@@ -35,7 +35,8 @@ function DetailView(params){
 		url: params.detail,
 		top: "180dp",
 		height: Ti.UI.FILL,
-		enableZoomControls: false //Android only
+		enableZoomControls: false, //Android only
+    borderRadius:1
 	});
 
 	win.add(img);
