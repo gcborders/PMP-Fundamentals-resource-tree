@@ -19,8 +19,8 @@ function DetailView(params){
 		 borderColor: 'blue',
 		 borderWidth: '2.0',
 		 top: 20,
-	     width: 75,
-	     height: 25
+	     width: 32,
+	     height: 32
 		});
 	
 	//bb is the Back button for all detail screen views
