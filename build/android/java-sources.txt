@@ -1,6 +1,0 @@
-"C:/Users/samaa_000/Documents/Titanium_Studio_Workspace/PMP-Fundamentals-resource-tree/build/android/gen/org/TeamOne/PMPPrep/ApplicationStylesheet.java"
-"C:/Users/samaa_000/Documents/Titanium_Studio_Workspace/PMP-Fundamentals-resource-tree/build/android/gen/org/TeamOne/PMPPrep/AssetCryptImpl.java"
-"C:/Users/samaa_000/Documents/Titanium_Studio_Workspace/PMP-Fundamentals-resource-tree/build/android/gen/org/TeamOne/PMPPrep/PmpPrepActivity.java"
-"C:/Users/samaa_000/Documents/Titanium_Studio_Workspace/PMP-Fundamentals-resource-tree/build/android/gen/org/TeamOne/PMPPrep/PmpPrepAppInfo.java"
-"C:/Users/samaa_000/Documents/Titanium_Studio_Workspace/PMP-Fundamentals-resource-tree/build/android/gen/org/TeamOne/PMPPrep/PmpPrepApplication.java"
-"C:/Users/samaa_000/Documents/Titanium_Studio_Workspace/PMP-Fundamentals-resource-tree/build/android/gen/org/TeamOne/PMPPrep/R.java"
