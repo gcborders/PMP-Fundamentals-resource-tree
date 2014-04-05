@@ -50,7 +50,7 @@ function createRow(params){
 var Processes = [
 	createRow({
 		title: "Plan Scope Management",
-		shortDescription: "This is the section where we got Plan Scope Management.",
+		shortDescription: "The goal of this process is to produce the Scope Management Plan.",
 		color: "#000",
 		leftImage: "/images/definescopethumb.png",
 		mainImage: "/images/planscopemanagement.png",
@@ -61,7 +61,7 @@ var Processes = [
 
 	createRow({
 		title: "Collect Requirements",
-		shortDescription: "This is the section where we got the Requirements.",
+		shortDescription: "This is the process of defining and documenting the needs of the stakeholders.",
 		color: "#000",
 		leftImage: "/images/definescopethumb.png",
 		mainImage: "/images/definescope.png",
@@ -72,7 +72,7 @@ var Processes = [
 
 	createRow({
 		title: "Define Scope",
-		shortDescription: "This is the section where we got the Scope.",
+		shortDescription: "This process defines exactly what the project will and will not include.",
 		color: "#000",
 		leftImage: "/images/definescopethumb.png",
 		mainImage: "/images/definescope.png",
@@ -82,8 +82,8 @@ var Processes = [
 	}),
 	
 	createRow({
-		title: "WBS",
-		shortDescription: "This is the section where we got the WBS.",
+		title: "Create WBS",
+		shortDescription: "The WBS defines each deliverable and further decomposes them into smaller work packages.",
 		color: "#000",
 		leftImage: "/images/definescopethumb.png",
 		mainImage: "/images/definescope.png",
