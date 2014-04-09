@@ -50,10 +50,14 @@ function createRow(params){
 var Processes = [
 	createRow({
 		title: "Plan Scope Management",
-		shortDescription: "This is the section where we got Plan Scope Management.",
+		shortDescription: "The goal of this process is to produce the Scope Management Plan.",
 		color: "#000",
+<<<<<<< HEAD
 		backgroundImage: "images/bg.jpg",
 		leftImage: "/images/definescopethumb.png",
+=======
+		leftImage: "/images/planscopemanagementthumb.png",
+>>>>>>> 7ef03b2c47a1c45b631ca8a37a2e3c2f5f480343
 		mainImage: "/images/planscopemanagement.png",
 		detail: "/detail/PlanScopeManagement.html",
 		hasChild: true,
@@ -62,10 +66,10 @@ var Processes = [
 
 	createRow({
 		title: "Collect Requirements",
-		shortDescription: "This is the section where we got the Requirements.",
+		shortDescription: "This is the process of defining and documenting the needs of the stakeholders.",
 		color: "#000",
-		leftImage: "/images/definescopethumb.png",
-		mainImage: "/images/definescope.png",
+		leftImage: "/images/collectrequirementsthumb.png",
+		mainImage: "/images/collectrequirements.png",
 		detail: "/detail/CollectRequirements.html",
 		hasChild: true,
 		className: "tableRow"
@@ -73,7 +77,7 @@ var Processes = [
 
 	createRow({
 		title: "Define Scope",
-		shortDescription: "This is the section where we got the Scope.",
+		shortDescription: "This process defines exactly what the project will and will not include.",
 		color: "#000",
 		leftImage: "/images/definescopethumb.png",
 		mainImage: "/images/definescope.png",
@@ -83,11 +87,11 @@ var Processes = [
 	}),
 	
 	createRow({
-		title: "WBS",
-		shortDescription: "This is the section where we got the WBS.",
+		title: "Create WBS",
+		shortDescription: "The WBS defines each deliverable and further decomposes them into smaller work packages.",
 		color: "#000",
-		leftImage: "/images/definescopethumb.png",
-		mainImage: "/images/definescope.png",
+		leftImage: "/images/createwbsthumb.png",
+		mainImage: "/images/createwbs.png",
 		detail: "/detail/WBS.html",
 		hasChild: true,
 		className: "tableRow"
