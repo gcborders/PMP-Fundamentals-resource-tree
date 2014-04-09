@@ -52,12 +52,7 @@ var Processes = [
 		title: "Plan Scope Management",
 		shortDescription: "The goal of this process is to produce the Scope Management Plan.",
 		color: "#000",
-<<<<<<< HEAD
-		backgroundImage: "images/bg.jpg",
-		leftImage: "/images/definescopethumb.png",
-=======
 		leftImage: "/images/planscopemanagementthumb.png",
->>>>>>> 7ef03b2c47a1c45b631ca8a37a2e3c2f5f480343
 		mainImage: "/images/planscopemanagement.png",
 		detail: "/detail/PlanScopeManagement.html",
 		hasChild: true,
