@@ -17,20 +17,24 @@ function MainWindowView() {
 			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
 			fontWeight: "bold" //Android will ignore this
 		},
-		top: "3dp",
+		textAlign: "center",
+		top: (Ti.Platform.osname === "android") ? "3dp" : "3dp",
 		//left: "54dp",
 		height: Ti.UI.SIZE,
 		color: "#fff"
 	});
 	var mainText = Ti.UI.createLabel({
-		text: 'Project Scope Management is made up of four main processes. These processes are Collect Requirements, Define Scope, Plan Scope Management, and Create WBS. According to the PMBOK 5th Edition, Project Scope Management includes the processes required to ensure that the project includes all the work required, and only the work required, to complete the project successfully. \n Swipe Left to Continue',
+		text: 'Project Scope Management is made up of four main processes. These processes are Collect Requirements, Define Scope, Plan Scope Management, and Create WBS. According to the PMBOK 5th Edition, Project Scope Management includes the processes required to ensure that the project includes all the work required, and only the work required, to complete the project successfully. \n\nSwipe Left to Continue',
 		font: {
-			fontSize: "16dp",
+			fontSize: "24dp",
 			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
 			fontWeight: "bold" //Android will ignore this
 		},
-		top: "40dp",
-		//left: "54dp",
+		textAlign: "center",
+		width:"auto",
+		top: (Ti.Platform.osname === "android") ? "65dp" : "65dp",
+		left: (Ti.Platform.osname === "android") ? "10dp" : "10dp",
+		right: (Ti.Platform.osname === "android") ? "10dp" : "10dp",
 		height: Ti.UI.SIZE,
 		color: "#FFF"
 	});
