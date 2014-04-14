@@ -3,8 +3,19 @@ body, html{
 	font-family: "Aller", Arial, sans-serif;
 	font-size: 0.95em;
 	line-height: 1.5em;
-	background: #660000;
+	background: #FFF;
+
+
 }
+
+html{
+	height: 100%;
+	background: -webkit-linear-gradient(#FFFFFF, #660000) no-repeat;
+	background: -o-linear-gradient(#FFFFFF, #660000);
+	background: -moz-linear-gradient(#FFFFFF, #660000);
+	background: linear-gradient(#FFFFFF, #660000) no-repeat;	
+}
+
 h1{
 	font-size: 120%;
 	font-family: "ChunkFive", "Chunkfive"; /*The second declaration is for Android*/
