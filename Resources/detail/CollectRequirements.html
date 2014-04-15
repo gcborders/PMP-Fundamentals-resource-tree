@@ -12,21 +12,52 @@
 		$(function(){
 			$("#accordion").accordion({active:false, collapsible:true});
 		});
+		$(document).ready(function(){
+			$("#showAnswers").click(function showAnswers(){
+				$(".hiddenAnswer").css("text-decoration", "underline");	
+				});		
+		});
 	</script>
 </head>
 <body>
+	<p id="description">
+		Collect Requirements is the process of determining, documenting, and managing stakeholder needs and requirements to meet project objectives. The key benefit of this process is that it provides the basis for defining and managing the project scope.
+	</p>
 	<div id="accordion">
 					<h3><a href="#">Inputs</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							<ul>
+								<li>
+									Scope Management Plan
+								</li>
+								<li>
+									Requirements Management Plan
+								</li>
+								<li>
+									Stakeholder Management Plan
+								</li>
+								<li>
+									Project Charter
+								</li>
+								<li>
+									Stakeholder Register
+								</li>
+							</ul>	
 						</p>
 						
 					</div>
 					<h3><a href="#">Outputs</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							<ul>
+								<li>
+									Requirements Documentation
+								</li>
+								<li>
+									Requirements Traceability Matrix
+								</li>
+							</ul>
 						</p>
 
 						
@@ -35,21 +66,105 @@
 					<h3><a href="#">Tools and Techniques</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							<ul>
+								<li>
+									Interviews
+								</li>
+								<li>
+									Focus Groups
+								</li>
+								<li>
+									Facilitated Workshops
+								</li>
+								<li>
+									Group Creativity Techniques
+								</li>
+								<li>
+									Group Decision-making Techniques
+								</li>
+								<li>
+									Questionnaire and Surveys
+								</li>
+								<li>
+									Observations
+								</li>
+								<li>
+									Prototypes
+								</li>
+								<li>
+									Benchmarking
+								</li>
+								<li>
+									Context Diagrams
+								</li>
+								<li>
+									Document Analysis
+								</li>
+							</ul>		
 						</p>
 						
 					</div>
 					<h3><a href="#">Glossary</a></h3>
 					<div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
-						</p>
+						<p><dfn>Business Requirements</dfn><br>Describe the higher-level needs of the organization as a whole, such as the business issues or opportunities, and reasons why a project has been undertaken.</p>
+						<p><dfn>Stakeholder Requirements</dfn><br>Describe the needs of a stakeholder or stakeholder group.</p>
+						<p><dfn>Solution Requirements</dfn><br>Describe features, functions and characteristics of the product, service or result that will meet the business and stakeholder requirements.</p>
+						<p><dfn>Transition Requirements</dfn><br>Describe temporary capabilities, such as data conversion and training requirements, needed to transition from the current 'as-is' state to the future 'to-be' state.</p>
+						<p><dfn>Project Requirements</dfn><br>Describe the actions, processes, or other conditions the project needs to meet.</p>
+						<p><dfn>Quality Requirements</dfn><br>Capture any condition or criteria needed to validate the successful completion of a project deliverable or fulfillment of other project requirements.</p>
+
+						
 						
 					</div>
 					<h3><a href="#">Sample questions</a></h3>
 					<div>
+						<input type="button" id="showAnswers" value="Show Answers" onClick="showAnswers();">
+
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							<ol>
+								<li>Project success can be contributed to which of the following?</li>
+									<ol class="upper-alpha">
+										<li>
+											Software tools
+										</li>
+										<li>
+											Software development tools
+										</li>
+										<li class="hiddenAnswer">
+											Active Stakeholder involvement in the discovery and decomposition of needs into requirements
+										</li>
+										<li>
+											None of the above
+										</li>
+									</ol>
+								<li>Which of the following are type of different requirement types?</li>
+									<ol class="upper-alpha">
+										<li>
+											Team skills
+										</li>
+										<li>
+											Test cases
+										</li>
+										<li>
+											Business requirements
+										</li>
+										<li class="hiddenAnswer">
+											None of the above
+										</li>
+									</ol>
+								<li>Which of the following best describes project requirements?</li>
+									<ol class="upper-alpha">
+										<li>
+											Levels of complexity
+										</li>
+										<li>
+											Good documentation
+										</li>
+										<li class="hiddenAnswer">
+											Actions, processes or other conditions the project needs to meet
+										</li>
+									</ol>
+							</ol>
 						</p>
 						
 					</div>
