@@ -21,3 +21,11 @@ h1{
 	font-family: "ChunkFive", "Chunkfive"; /*The second declaration is for Android*/
 	margin-bottom: -12px;
 }
+
+ol.upper-alpha{
+	list-style-type: upper-alpha;
+}
+
+#description{
+	margin: 0 1em 0 1em;
+}
