@@ -12,60 +12,12 @@ function DetailView(params){
 		image: params.mainImage,
 		width: "100%",
 		height: "180dp",
-		top: "65dp"
+		top: (Ti.Platform.osname === "android") ? "0dp" : "0dp",
 	});
 	
-	var headerLabel = Ti.UI.createLabel({
-		text: params.detailTitle,
-		font: {
-			fontSize: "16dp",
-			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
-			fontWeight: "bold" //Android will ignore this
-		},
-		top: "170dp",
-		right: "12dp",
-		color: "#FFF",
-		textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
-		//Shadow: iOS only
-		shadowColor: "#1a3743", //Darker blue
-		shadowOffset: {x:1, y:1}
-	});
-
 	var detail = Ti.UI.createWebView({
 		url: params.detail,
-		top: "255dp",
-		height: Ti.UI.FILL,
-		enableZoomControls: false, //Android only
-    borderRadius:1
-	});
-
-
-	var img = Ti.UI.createImageView({
-		image: params.mainImage,
-		width: "100%",
-		height: "180dp",
-		top: "65dp"
-	});
-
-	var headerLabel = Ti.UI.createLabel({
-		text: params.detailTitle,
-		font: {
-			fontSize: "16dp",
-			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
-			fontWeight: "bold" //Android will ignore this
-		},
-		top: "170dp",
-		right: "12dp",
-		color: "#FFF",
-		textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
-		//Shadow: iOS only
-		shadowColor: "#1a3743", //Darker blue
-		shadowOffset: {x:1, y:1}
-	});
-
-	var detail = Ti.UI.createWebView({
-		url: params.detail,
-		top: "255dp",
+		top: (Ti.Platform.osname === "android") ? "180dp" : "180dp",
 		height: Ti.UI.FILL,
 		enableZoomControls: false, //Android only
     borderRadius:1
@@ -87,15 +39,14 @@ function DetailView(params){
 			 height: 43
 		});
 		
-		win.add(bb);
+		//win.add(bb);
 		bb.addEventListener('click', function(){	
 	    	win.close(win);
 		});
 	}
-
 	win.add(img);
+	if (os === 'ipad' || os === 'iphone'){win.add(bb);}
 	win.add(detail);
-	win.add(headerLabel);
 
 	return win;
 }
