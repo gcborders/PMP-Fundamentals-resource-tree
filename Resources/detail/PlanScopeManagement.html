@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<title>Plan Scope Management</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+<script>
+		$(function(){
+			$("#accordion").accordion({active:false, collapsible:true});
+		});
+		$(document).ready(function(){
+			var toggle="off";
+			$("#showAnswers").click(function showAnswers(){
+				if (toggle === "off"){
+				$(".hiddenAnswer").css("text-decoration", "underline");	
+				$("#showAnswers").val("Hide Answers");
+				toggle="on";
+				} else
+				{
+				$(".hiddenAnswer").css("text-decoration", "none");	
+				$("#showAnswers").val("Show Answers");	
+				toggle="off";
+				}
+				});		
+		});
+	</script>
+</head>
+<body>
+	<div id="backgroundWrapper">
+	<p id="description">
+		Plan Scope Management is the process of putting together a scope management plan which describes the scope in depth including methods of defining, validating and controlling the scope of the project.
+	</p>
+	<div id="accordion">
+					<h3><a href="#">Inputs</a></h3>
+					<div>
+						<p>
+							<ul>
+								<li>
+									Project Management Plan: <br>
+									This document explains the execution plan of the project, as well as methods to ensure that the project is monitored and controlled. It includes baselines of the project including the scope, cost and schedule as well as other plans such as the communications plan, requirements management plan, etc. This project management plan is used as an input to create the scope management plan.
+								</li>
+								<li>
+									Project Charter: <br>
+									This document serves as a formal authorization of the project by the project sponsor. IT includes any assumptions, clarifications of the client’s needs, high-level requirements, high-level budget, etc. This project charter basically has the context of the project, which is required as an input to create the scope management plan.
+								</li>
+								<li>
+									Enterprise Environmental Factors: <br>
+									These factors need to be documented as they have an impact on the scope management plan; these factors include: corporate culture, corporate infrastructure, industry details and conditions, etc.
+								</li>
+								<li>
+									Organizational Process Assets: <br>
+									Processes will impact the scope management plan including policies and procedures, corporate history, and lessons learnt from past projects.
+								</li>
+							</ul>
+						</p>
+					</div>
+					<h3><a href="#">Outputs</a></h3>
+					<div>
+						<p>
+							<ul>
+								<li>
+									Scope Management Plan: <br>
+									This output is one component of the project management plan that describes the scope of the project in depth: its definition as well as how it will be developed, monitored, controlled and validated. Depending on the project, this step can be formal or informal; either case, it addresses the various processes around the scope management.
+								</li>
+								<li>
+									Requirements Management Plan: <br>
+									This output is another component of the project management plan that outlines how the requirements will be analyzed, documented and managed.The project manager decides on a phase-to-phase relationship and bases the requirements management plan on it. It also outlines different processes and how each will be managed such as configuration management, prioritization of requirements, etc.
+								</li>
+							</ul>
+						</p>
+					</div>
+					<h3><a href="#">Tools and Techniques</a></h3>
+					<div>
+						<p>
+							<ul>
+								<li>
+									Expert Judgement: <br>
+									The input of experts in a knowledge area is a necessary tool in scope management plans. This includes education, previous work experience, training, etc.
+								</li>
+								<li>
+									Meetings: <br>
+									Meetings with the project team can be held in order to create the scope management plan. Attendees can include the project manager, sponsor, team members, and other stakeholders that would be able to provide input for the scope management plan.
+								</li>
+							</ul>
+						</p>
+					</div>
+					<h3><a href="#">Glossary</a></h3>
+					<div>
+						<p><dfn>Plan Scope Management</dfn><br> This is the process of putting together a scope management plan which describes the scope in depth including methods of defining, validating and controlling the scope of the project.</p>
+						<p><dfn>Project Charter</dfn><br> This is a formal document created by the project sponsor and serves as the authorization of the project.</p>
+						<p><dfn>Project Scope Management</dfn><br> This includes multiple steps which are meant to ensure that the project meets the requirements, and only its requirements (no more, no less).</p>
+						<p><dfn>Project Sponsor</dfn><br> This person is responsible and accountable for the project and its success. He or she provides support to the rest of the team. It can also be a group of people.</p>
+						<p><dfn>Requirement</dfn><br> A feature or condition that is required in the project in order to satisfy the client’s expectations, as per the scope of the project.</p>
+					</div>
+					<h3><a href="#">Sample questions</a></h3>
+					<div>
+						<input type="button" id="showAnswers" value="Show Answers" onClick="showAnswers();">
+						<p>
+							<ol>
+								<li>The requirements management plan is an output of:</li>
+									<ol class="upper-alpha">
+										<li>
+											Define scope
+										</li>
+										<li>
+											Develop project management plan
+										</li>
+										<li>
+											Collect requirements
+										</li>
+										<li class="hiddenAnswer">
+											Plan scope management
+										</li>
+									</ol>
+								<li>In which of the following processes is a scope management plan created?</li>
+									<ol class="upper-alpha">
+										<li class="hiddenAnswer">
+											A plan scope management
+										</li>
+										<li>
+											Define scope
+										</li>
+										<li>
+											Create WBS
+										</li>
+										<li>
+											Develop project management plan
+										</li>
+									</ol>
+								<li>The Scope Management processes are generally completed in which order?</li>
+									<ol class="upper-alpha">
+										<li>
+											Collect Requirements, Create WBS, Define Scope
+										</li>
+										<li>
+											Define Scope, Collect Requirements, Create WBS
+										</li>
+										<li>
+											Create WBS, Collect Requirements, Define Scope
+										</li>
+										<li class="hiddenAnswer">
+											Collect Requirements, Define Scope, Create WBS
+										</li>
+									</ol>
+								<li>A team member determines the scope for her activity is no longer valid. She comes to you for advice on making the change. To which of the following documents should you refer to make this change?</li>
+									<ol class="upper-alpha">
+										<li>
+											The work authorization system
+										</li>
+										<li>
+											The cost management plan
+										</li>
+										<li>
+											The project management information system
+										</li>
+										<li class="hiddenAnswer">
+											The scope management plan
+										</li>
+									</ol>
+								<li>Which of the following is NOT addressed in scope management planning??</li>
+									<ol class="upper-alpha">
+										<li>
+											How to obtain acceptance of the deliverables
+										</li>
+										<li class="hiddenAnswer">
+											How to determine the correctness of the deliverables
+										</li>
+										<li>
+											How to plan how the project will accomplish the scope
+										</li>
+										<li>
+											How to create the WBS
+										</li>
+									</ol>
+							</ol>
+						</p>
+					</div>
+				</div>
+				</div>
+</body>
+</html>
