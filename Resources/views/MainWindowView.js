@@ -26,7 +26,7 @@ function MainWindowView() {
 	var mainText = Ti.UI.createLabel({
 		text: 'Project Scope Management is made up of four main processes. These processes are Collect Requirements, Define Scope, Plan Scope Management, and Create WBS. According to the PMBOK 5th Edition, Project Scope Management includes the processes required to ensure that the project includes all the work required, and only the work required, to complete the project successfully. \n\nSwipe Left to Continue',
 		font: {
-			fontSize: "20dp",
+			fontSize: "24dp",
 			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
 			fontWeight: "bold" //Android will ignore this
 		},
