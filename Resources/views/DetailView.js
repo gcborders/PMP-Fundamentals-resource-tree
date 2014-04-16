@@ -45,6 +45,7 @@ function DetailView(params){
 		});
 	}
 	win.add(img);
+	//Add Button After Image
 	if (os === 'ipad' || os === 'iphone'){win.add(bb);}
 	win.add(detail);
 
