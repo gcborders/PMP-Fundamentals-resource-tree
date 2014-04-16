@@ -1,0 +1,31 @@
+body, html{
+	/* Note that we can use the custom font we loaded */
+	font-family: "Aller", Arial, sans-serif;
+	font-size: 0.95em;
+	line-height: 1.5em;
+	background: #FFF;
+
+
+}
+
+html{
+	height: 100%;
+	background: -webkit-linear-gradient(#FFFFFF, #660000) no-repeat;
+	background: -o-linear-gradient(#FFFFFF, #660000);
+	background: -moz-linear-gradient(#FFFFFF, #660000);
+	background: linear-gradient(#FFFFFF, #660000) no-repeat;	
+}
+
+h1{
+	font-size: 120%;
+	font-family: "ChunkFive", "Chunkfive"; /*The second declaration is for Android*/
+	margin-bottom: -12px;
+}
+
+ol.upper-alpha{
+	list-style-type: upper-alpha;
+}
+
+#description{
+	margin: 0 1em 0 1em;
+}
