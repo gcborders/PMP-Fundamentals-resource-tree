@@ -13,8 +13,18 @@
 			$("#accordion").accordion({active:false, collapsible:true});
 		});
 		$(document).ready(function(){
+			var toggle="off";
 			$("#showAnswers").click(function showAnswers(){
+				if (toggle === "off"){
 				$(".hiddenAnswer").css("text-decoration", "underline");	
+				$("#showAnswers").val("Hide Answers");
+				toggle="on";
+				} else
+				{
+				$(".hiddenAnswer").css("text-decoration", "none");	
+				$("#showAnswers").val("Show Answers");	
+				toggle="off";
+				}
 				});		
 		});
 	</script>
