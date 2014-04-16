@@ -12,12 +12,12 @@ function DetailView(params){
 		image: params.mainImage,
 		width: "100%",
 		height: "180dp",
-		top: "0dp"
+		top: (Ti.Platform.osname === "android") ? "0dp" : "0dp",
 	});
 	
 	var detail = Ti.UI.createWebView({
 		url: params.detail,
-		top: "180dp",
+		top: (Ti.Platform.osname === "android") ? "180dp" : "180dp",
 		height: Ti.UI.FILL,
 		enableZoomControls: false, //Android only
     borderRadius:1
@@ -44,8 +44,8 @@ function DetailView(params){
 	    	win.close(win);
 		});
 	}
-	if (os === 'ipad' || os === 'iphone'){win.add(bb);}
 	win.add(img);
+	if (os === 'ipad' || os === 'iphone'){win.add(bb);}
 	win.add(detail);
 
 	return win;
