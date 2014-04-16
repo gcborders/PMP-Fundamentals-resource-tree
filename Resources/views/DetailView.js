@@ -7,95 +7,46 @@ function DetailView(params){
 		navBarHidden: false,
 		tabBarHidden: false
 	});
-		
-	var img = Ti.UI.createImageView({
-		image: params.mainImage,
-		width: "100%",
-		height: "180dp",
-		top: "65dp"
-	});
-	
-	var headerLabel = Ti.UI.createLabel({
-		text: params.detailTitle,
-		font: {
-			fontSize: "16dp",
-			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
-			fontWeight: "bold" //Android will ignore this
-		},
-		top: "170dp",
-		right: "12dp",
-		color: "#FFF",
-		textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
-		//Shadow: iOS only
-		shadowColor: "#1a3743", //Darker blue
-		shadowOffset: {x:1, y:1}
-	});
-
-	var detail = Ti.UI.createWebView({
-		url: params.detail,
-		top: "255dp",
-		height: Ti.UI.FILL,
-		enableZoomControls: false, //Android only
-    borderRadius:1
-	});
-
 
 	var img = Ti.UI.createImageView({
 		image: params.mainImage,
 		width: "100%",
 		height: "180dp",
-		top: "65dp"
-	});
-
-	var headerLabel = Ti.UI.createLabel({
-		text: params.detailTitle,
-		font: {
-			fontSize: "16dp",
-			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
-			fontWeight: "bold" //Android will ignore this
-		},
-		top: "170dp",
-		right: "12dp",
-		color: "#FFF",
-		textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
-		//Shadow: iOS only
-		shadowColor: "#1a3743", //Darker blue
-		shadowOffset: {x:1, y:1}
+		top: (Ti.Platform.osname === "android") ? "0dp" : "0dp",
 	});
 
 	var detail = Ti.UI.createWebView({
 		url: params.detail,
-		top: "255dp",
+		top: (Ti.Platform.osname === "android") ? "180dp" : "180dp",
 		height: Ti.UI.FILL,
 		enableZoomControls: false, //Android only
     borderRadius:1
 	});
 
     var os = Ti.Platform.osname;
-	
+
 	if (os === 'ipad' || os === 'iphone') {
 		var bb = Ti.UI.createButton({ systemButton: Ti.UI.iPhone.SystemButton.BACK, 
 			 backgroundImage:"go_previous_black.png",
 			 touchEnabled: 'True',
-			 borderRadius:'20',
-			 backgroundColor:'gray',
+			 borderRadius:'15',
+			 backgroundColor:'',
 			 borderColor: 'white',
 			 borderWidth: '1.0',
 			 top: 20,
-			 right: 20,
-			 width: 43,
-			 height: 43
+			 left: 10,
+			 width: 32,
+			 height: 32
 		});
-		
-		win.add(bb);
+
+		//win.add(bb);
 		bb.addEventListener('click', function(){	
 	    	win.close(win);
 		});
 	}
-
 	win.add(img);
+	if (os === 'ipad' || os === 'iphone'){win.add(bb);}
 	win.add(detail);
-	win.add(headerLabel);
 
 	return win;
 }
