@@ -30,25 +30,32 @@
 	</script>
 </head>
 <body>
+	<p id="description">
+		The Create WBS process subdivides project deliverables into work packages, which are smaller and more easily handled. The major benefit of this is the structured vision it produces.	</p>
 	<div id="accordion">
 					<h3><a href="#">Inputs</a></h3>
 					<div>
 						<p>
 							<ul>
 								<li>
-									Scope Management Plan
+									Scope Management Plan:
+									<p>Explains how the WBS is created from the project scope statement, and how the WBS will be maintained and approved.</p>
 								</li>
 								<li>
-									Project Scope Statement
+									Project Scope Statement:
+									<p>Outlines what work will and will not be covered during the course of the project. Any restrictions and limitations that may affect the project are also listed.</p>
 								</li>
 								<li>
-									Requirements Documentation
+									Requirements Documentation:
+									<p>Detailed documentation of requirements is absolutely essential to understand what work needs to be done to produce the project, and exactly what the end project will produce.</p>
 								</li>
 								<li>
-									Enterprise Environmental Factors
+									Enterprise Environmental Factors:
+									<p>There may be external WBS standards that relate to certain projects in specific industries. This must be taken into consideration when creating the WBS.</p>
 								</li>
 								<li>
-									Organizational Process Assets
+									Organizational Process Assets:
+									<p>Organizational policies, procedures, templates, previous project files, and lessons learned from previous projects may have an influence on the WBS process.</p>
 								</li>
 							</ul>
 						</p>
@@ -59,16 +66,12 @@
 						<p>
 							<ul>
 								<li>
-									WBS
+									Scope Baseline:
+									<p>The approved scope statement, WBS, and WBS dictionary. </p>
 								</li>
 								<li>
-									WBS Dictionary
-								</li>
-								<li>
-									Scope Baseline
-								</li>
-								<li>
-									Project Documents Updates
+									Project Documents Updates:
+									<p>In the process of WBS creation, some project documents may need to be updated. Examples of this are requirements documentation and scope.</p>
 								</li>
 							</ul>
 						</p>
@@ -82,9 +85,31 @@
 							<ul>
 								<li>
 									Decomposition
+									<p>The process of breaking down the scope and deliverables into work packages. The level of decomposition depends on the amount of control necessary to manage the project. The level of detail in the work packages depends on how complex the project is.</p>
+									<p>Decomposition involves:
+										<ul>
+											<li>
+												Identifying and analyzing deliverables and related work
+											</li>
+											<li>
+												Structuring and organizing the WBS
+											</li>
+											<li>
+												Decomposing the upper levels into more detailed packages
+											</li>
+											<li>
+												Applying codes to the WBS components for identification
+											</li>
+											<li>
+												Confirming that the level of decomposition is appropriate
+											</li>
+										</ul>
+									
+									</p>
 								</li>
 								<li>
 									Expert Judgement
+									<p>An expert in the field can be used to analyze the information and assist in decomposition. Expert judgement can also be considered to be the use of templates the help direct the breakdown into work packages.</p>
 								</li>
 							</ul>
 						</p>
@@ -93,17 +118,103 @@
 					<h3><a href="#">Glossary</a></h3>
 					<div>
 						<p>
-							<dfn>WBS Dictionary</dfn><br> Details of the work required for each work package. This can include activities, milestones, the responsible organization, quality and resource requirements, performance measurement critera, start and end dates, cost estimates, and more.
-
+							<dfn>WBS</dfn><br>Short for Work Breakdown Structure, this is a hierarchical decomposition of the work that needs to be completed to finish the project. Higher levels are more vague, and the lower levels are more detailed. Work packages are the lowest and most detailed element of the WBS. Each item in the WBS is assigned an identification number for tracking and organization purposes.
+							<dfn>WBS Dictionary</dfn><br>Details of the work required for each work package. This can include activities, milestones, the responsible organization, quality and resource requirements, performance measurement critera, start and end dates, cost estimates, and more.
+							<dfn>Work Package</dfn><br>A work package is the smallest unit of work in the WBS. These can be used to “group the activities where work is scheduled, estimated, monitored, and controlled.” 
 						</p>
 						
 					</div>
 					<h3><a href="#">Sample questions</a></h3>
 					<div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
-						</p>
+						<input type="button" id="showAnswers" value="Show Answers" onClick="showAnswers();">
+						<ol>
+							<li>The scope baseline can BEST be said to include the:</li>
+								<ol class="upper-alpha">
+									<li class="hiddenAnswer">
+										WBS and project scope statement.
+									</li>
+									<li>
+										Scope management plan and project scope statement.
+									</li>
+									<li >
+										Scope management plan and WBS.
+									</li>
+									<li>
+										WBS and project charter.
+									</li>
+								</ol>
 						
+							<p class="reference">Reference: http://www.passpmp.net/pmi-001-qa-section-3-scope-management-81-90.html </p>
+				
+							<li>The project manager had to request a change in the approved project budget because the WBS did not contain some work that needed to be done. Which of the following is the BEST thing to do as a result of this situation?</li>
+								<ol class="upper-alpha">
+									<li class="hiddenAnswer">
+										Redo the WBS and look for more missing scope.
+									</li>
+									<li>
+										Ask for a time extension.
+									</li>
+									<li >
+										Redo the change control system.
+									</li>
+									<li>
+										Recalculate the project scope variance.
+									</li>
+								</ol>
+								<p class="reference">Reference: http://www.passpmp.net/pmi-001-qa-section-3-scope-management-81-90.html </p>						
+
+							<li>Which of the following can be BEST described as a characteristic of Work Package?</li>
+								<ol class="upper-alpha">
+									<li>
+										May or may not be cost estimated
+									</li>
+									<li class="hiddenAnswer">
+										Can be scheduled
+									</li>
+									<li >
+										Can be further decomposed into work packages
+									</li>
+									<li>
+										May be monitored subject to nature of the project
+									</li>
+								</ol>
+								<p class="reference">Reference: http://preparepm.com/pmp/scope.html </p>						
+
+							<li>Project Charter is an input to all of the following processes EXCEPT:</li>
+								<ol class="upper-alpha">
+									<li>
+										Collect requirements
+									</li>
+									<li>
+										Define Scope
+									</li>
+									<li class="hiddenAnswer">
+										Create WBS
+									</li>
+									<li>
+										Develop Project Management Plan
+									</li>
+								</ol>
+								<p class="reference">Reference: http://preparepm.com/pmp/scope.html </p>						
+
+							<li>Completion of a product scope is measured against: </li>
+								<ol class="upper-alpha">
+									<li>
+										Product Management Plan
+									</li>
+									<li>
+										Project Management Plan
+									</li>
+									<li class="hiddenAnswer">
+										WBS and WBS Dictionary
+									</li>
+									<li>
+										Product Requirements
+									</li>
+								</ol>
+								<p class="reference">Reference: http://preparepm.com/pmp/scope.html </p>						
+
+						</ol>
 					</div>
 
 				</div>
