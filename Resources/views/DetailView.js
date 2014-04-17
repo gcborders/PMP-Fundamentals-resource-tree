@@ -7,17 +7,27 @@ function DetailView(params){
 		navBarHidden: false,
 		tabBarHidden: false
 	});
-		
+	
+	var toppg = "0";	
+		if (os === 'ipad' || os === 'iphone'){toppg = "3dp";}
+    else{top = "0dp";
+   };
+   
 	var img = Ti.UI.createImageView({
 		image: params.mainImage,
 		width: "100%",
 		height: "180dp",
-		top: (Ti.Platform.osname === "android") ? "0dp" : "0dp",
+		top:toppg,
 	});
+	
+	 
+	if (os === 'ipad' || os === 'iphone'){top = "183dp";}
+    else{top = "180dp";
+   };
 	
 	var detail = Ti.UI.createWebView({
 		url: params.detail,
-		top: (Ti.Platform.osname === "android") ? "180dp" : "180dp",
+		top: top,
 		height: Ti.UI.FILL,
 		enableZoomControls: false, //Android only
     borderRadius:1
@@ -30,13 +40,13 @@ function DetailView(params){
 			 backgroundImage:"go_previous_black.png",
 			 touchEnabled: 'True',
 			 borderRadius:'20',
-			 backgroundColor:'gray',
-			 borderColor: 'white',
+			 backgroundColor:'#FFF',
+			 borderColor: '#FFF',
 			 borderWidth: '1.0',
 			 top: 20,
-			 right: 20,
-			 width: 43,
-			 height: 43
+			 left: 10,
+			 width: 25,
+			 height: 25
 		});
 		
 		//win.add(bb);
