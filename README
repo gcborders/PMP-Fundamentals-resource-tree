@@ -1,18 +1,14 @@
-Welcome to your Appcelerator Titanium Mobile Project
+Welcome to your PMP Exam Prep Mobile Project for CS633
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
-
-
+This is the project of team 1 containing content on Scope Management. 
 
 ----------------------------------
 Stuff our legal folk make us say:
 
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
+PMP Prep marks and logos are trademarks of Team 1 CS633 (Spring 2,2014):
+Crystal Weaver | Gregg Borders | James Geraci | Sama Al-Obaidy  
 
-Titanium is Copyright (c) 2008-2013 by Appcelerator, Inc. All Rights Reserved.
+Boston University Copyright (c) 2014 All Rights Reserved.
 
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
+This mobile app was created using Titanium.
 

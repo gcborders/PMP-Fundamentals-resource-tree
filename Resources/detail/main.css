@@ -9,12 +9,14 @@ body, html{
 }
 
 html{
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	background: -webkit-linear-gradient(#FFFFFF, #660000) no-repeat;
 	background: -o-linear-gradient(#FFFFFF, #660000);
 	background: -moz-linear-gradient(#FFFFFF, #660000);
 	background: linear-gradient(#FFFFFF, #660000) no-repeat;	
 }
+
 
 h1{
 	font-size: 120%;
@@ -29,3 +31,8 @@ ol.upper-alpha{
 #description{
 	margin: 0 1em 0 1em;
 }
+
+.reference{
+	font-size: 75%;
+}
+
