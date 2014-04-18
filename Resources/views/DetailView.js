@@ -8,8 +8,8 @@ function DetailView(params){
 		tabBarHidden: false
 	});
 	
-	var toppg = "0";	
-		if (os === 'ipad' || os === 'iphone'){toppg = "3dp";}
+	var top = "0";	
+		if (os === 'ipad' || os === 'iphone'){top = "3dp";}
     else{top = "0dp";
    };
    
@@ -17,7 +17,7 @@ function DetailView(params){
 		image: params.mainImage,
 		width: "100%",
 		height: "180dp",
-		top:toppg,
+		top: top,
 	});
 	
 	 
