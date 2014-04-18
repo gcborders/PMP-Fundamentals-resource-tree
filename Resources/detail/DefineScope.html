@@ -8,9 +8,24 @@
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<script>
+<script>
 		$(function(){
 			$("#accordion").accordion({active:false, collapsible:true});
+		});
+		$(document).ready(function(){
+			var toggle="off";
+			$("#showAnswers").click(function showAnswers(){
+				if (toggle === "off"){
+				$(".hiddenAnswer").css("text-decoration", "underline");	
+				$("#showAnswers").val("Hide Answers");
+				toggle="on";
+				} else
+				{
+				$(".hiddenAnswer").css("text-decoration", "none");	
+				$("#showAnswers").val("Show Answers");	
+				toggle="off";
+				}
+				});		
 		});
 	</script>
 </head>
@@ -19,14 +34,56 @@
 					<h3><a href="#">Inputs</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							<ul>
+								<li>
+									Scope Management Plan:
+									<p>The scope management plan provides clarity as to how project teams will determine which type of requirements need to be collected for the project.</p>
+								</li>
+								<li>
+									Project Charter:
+									<p>The project charter is used to provide the high-level description of the product, service, or result of the project so that detailed requirements can be developed.</p>
+								</li>
+								<li>
+									Requirements Documentation:
+									<p>Detailed documentation of requirements is absolutely essential to understand what work needs to be done to produce the project, and exactly what the end project will produce.</p>
+								</li>
+								<li>
+									Organizational Project Assets:
+									<p>Organizational policies, procedures, templates, previous project files, and lessons learned from previous projects may have an influence on how the scope is defined.</p>
+								</li>
+							</ul>						
 						</p>
 						
 					</div>
 					<h3><a href="#">Outputs</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							<ul>
+								<li>
+									Project Scope Statement:
+									<p>The project scope statement is the description of the project scope major deliverables, assumptions and constraints. </p>
+									<ul>
+										<li>Product Scope Description
+											<p>Elaborates the characteristics of the product, service or result described in the project charter and requirements documentation.</p>
+										</li>
+										<li>Acceptance Criteria
+											<p>A set of conditions required to be met before deliverables are accepted.</p>
+										</li>
+										<li>Deliverable
+											<p>A unique and verifiable product, result or capability to perform a service that is require to be produced to complete a process, phase, or project.</p>
+										</li>
+										<li>Project Exclusion
+											<p>Generally identifies what is being excluded from the project.</p>	
+										</li>
+										<li>Constraints
+											<p>A limiting factor that affects the execution of the project.</p>	
+										</li>
+										<li>Assumptions
+											<p>A factor in the planning process that is considered to be true, real or certain without proof or demonstration.</p>	
+										</li>
+									</ul>
+								</li>
+							</ul>
 						</p>
 
 						
@@ -35,21 +92,114 @@
 					<h3><a href="#">Tools and Techniques</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							<ul>
+								<li>
+									Expert Judgement
+									<p>Expert judgement is used to analyze information needed to develop the project scope statement.  Sources of expert judgement include:</p>
+									<p>
+										<ul>
+											<li>
+												Other business units
+											</li>
+											<li>
+												Consultants
+											</li>
+											<li>
+												Stakeholders
+											</li>
+											<li>
+												Professional and technical associations
+											</li>
+											<li>
+												Industry groups
+											</li>
+											<li>
+												Subject Matter Experts
+											</li>
+										</ul>
+									</p>
+								</li>
+								<li>
+									Product Analysis
+									<p>Product analysis helps define the product breakdown, systems analysis, requirements analysis, systems engineering, value engineering and value analysis.</p>
+								</li>
+								<li>
+									Alternatives Generation
+									<p>Provides many potential options in order to execute and perform work of the project.</p>
+								</li>
+								<li>
+									Facilitated Workshops
+									<p>Working sessions with key players to reach a cross-functional and common understanding of the project objectives and its limits.</p>
+								</li>
+							</ul>
 						</p>
 						
 					</div>
 					<h3><a href="#">Glossary</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+							Refer to the Outputs section for related term definitions in context.
 						</p>
 						
 					</div>
 					<h3><a href="#">Sample questions</a></h3>
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu risus eget magna ultricies tincidunt sit amet nec orci. Quisque volutpat quam nisi, sit amet sollicitudin metus tempus quis. Quisque eget suscipit nisi. Etiam ipsum quam, dignissim vel tempor id, porttitor at mauris. Morbi bibendum dignissim mauris, vel condimentum mi vehicula ut. Aenean blandit leo in varius mollis. Nulla et est non justo mollis ullamcorper in nec dui. Ut egestas purus lorem, nec consequat orci dignissim euismod. 
+						<input type="button" id="showAnswers" value="Show Answers" onClick="showAnswers();">
+						<ol>
+							<li>A scope change has been suggested by one of the stakeholders on the project. After careful consideration and a lot of arguing, the change control board has decided to reject the change. What should the project manager do?</li>
+								<ol class="upper-alpha">
+									<li>
+										Support the stakeholder by asking the board for the reason for the rejection.
+									</li>
+									<li>
+										Suggest to the stakeholder that the next change they request will be approved.
+									</li>
+									<li class="hiddenAnswer">
+										Record the change request and its result.
+									</li>
+									<li>
+										Advise the change control board to make sure they create approval processes before the next change is proposed.
+									</li>
+								</ol>
+						
+							<p class="reference">Reference: PMP® Exam Prep Page: 169</p>
+						
+							<li>All of the following are parts of the scope baseline EXCEPT the:</li>
+								<ol class="upper-alpha">
+									<li class="hiddenAnswer">
+										Scope management plan.
+									</li>
+									<li>
+										Project scope statement.
+									</li>
+									<li >
+										Work breakdown structure.
+									</li>
+									<li>
+										WBS dictionary.
+									</li>
+								</ol>
+								<p class="reference">Reference: PMP® Exam Prep Page: 166</p>						
+
+							<li>The program was planned years ago, before there was a massive introduction of new technology. While planning the next project in this program, the project manager has expanded the scope management plan because as a project becomes more complex, the level of uncertainty in the scope:</li>
+								<ol class="upper-alpha">
+									<li>
+										Remains the same.
+									</li>
+									<li>
+										Decreases.
+									</li>
+									<li >
+										Decreases then increases.
+									</li>
+									<li class="hiddenAnswer">
+										Increases.
+									</li>
+								</ol>
+								<p class="reference">Reference: PMP® Exam Prep Page: 149</p>						
+							</ol>
+						
 						</p>
 						
 					</div>

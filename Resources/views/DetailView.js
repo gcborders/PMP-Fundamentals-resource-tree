@@ -5,43 +5,59 @@ function DetailView(params){
 		fullscreen: false,	//[Android: makes the window a "heavyweight" window (thereby allowing the back button to work with it)]
 		//exitOnClose: true, //[Android: make the application exit if the back button is pressed from the main window]
 		navBarHidden: false,
-		tabBarHidden: true
+		tabBarHidden: false
 	});
 	
+	var top = "0";	
+		if (os === 'ipad' || os === 'iphone'){top = "3dp";}
+    else{top = "0dp";
+   };
+   
 	var img = Ti.UI.createImageView({
 		image: params.mainImage,
 		width: "100%",
 		height: "180dp",
-		top: "0dp"
+		top: top,
 	});
 	
-	var headerLabel = Ti.UI.createLabel({
-		text: params.detailTitle,
-		font: {
-			fontSize: "16dp",
-			fontFamily: (Ti.Platform.osname === "android") ? "Aller_Bd" : "Aller",
-			fontWeight: "bold" //Android will ignore this
-		},
-		top: "156dp",
-		right: "12dp",
-		color: "#FFF",
-		textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
-		//Shadow: iOS only
-		shadowColor: "#1a3743", //Darker blue
-		shadowOffset: {x:1, y:1}
-	});
-
+	 
+	if (os === 'ipad' || os === 'iphone'){top = "183dp";}
+    else{top = "180dp";
+   };
+	
 	var detail = Ti.UI.createWebView({
 		url: params.detail,
-		top: "180dp",
+		top: top,
 		height: Ti.UI.FILL,
 		enableZoomControls: false, //Android only
     borderRadius:1
 	});
 
+    var os = Ti.Platform.osname;
+	
+	if (os === 'ipad' || os === 'iphone') {
+		var bb = Ti.UI.createButton({ systemButton: Ti.UI.iPhone.SystemButton.BACK, 
+			 backgroundImage:"go_previous_black.png",
+			 touchEnabled: 'True',
+			 borderRadius:'20',
+			 backgroundColor:'#FFF',
+			 borderColor: '#FFF',
+			 borderWidth: '1.0',
+			 top: 20,
+			 left: 10,
+			 width: 25,
+			 height: 25
+		});
+		
+		//win.add(bb);
+		bb.addEventListener('click', function(){	
+	    	win.close(win);
+		});
+	}
 	win.add(img);
+	//Add Button After Image
+	if (os === 'ipad' || os === 'iphone'){win.add(bb);}
 	win.add(detail);
-	win.add(headerLabel);
 
 	return win;
 }
