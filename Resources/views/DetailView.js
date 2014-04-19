@@ -17,7 +17,7 @@ function DetailView(params){
 		image: params.mainImage,
 		width: "100%",
 		height: "180dp",
-		top: top,
+		top: top
 	});
 	
 	 
