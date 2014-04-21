@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>org.TeamOne.PMPPrep</id>
     <name>PMP Prep</name>
-    <version>1.0</version>
+    <version>1.0.3</version>
     <publisher>Boston University</publisher>
     <url>http://pmpfundamentals.com</url>
     <description>not specified</description>
